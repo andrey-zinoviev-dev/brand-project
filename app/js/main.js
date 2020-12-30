@@ -20,7 +20,8 @@ const attachDocument = document.querySelector('.send');
 const sendMessage = document.querySelector('.send_message');
 const layoutMenuButton = document.querySelector('.menu_dropdown');
 const links = document.querySelector('.links');
-console.log(layoutMenuButton);
+const refs = Array.from(links.querySelectorAll('.link'));
+
 if(uploadImagePage) {
   uploadImagePage.addEventListener('click', (evt) => {
     popup.classList.add('popup_opened');
@@ -74,3 +75,16 @@ if(layoutMenuButton) {
     links.classList.toggle('links_shown');
   })
 }
+
+refs.forEach((ref) => {
+  console.log(refs);
+  ref.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    console.log(ref);
+    refs.forEach((ref) => {
+      ref.classList.remove('link_underlined');
+    });
+    ref.classList.add('link_underlined');
+    localStorage.setItem('links', JSON.stringify(refs));
+  })
+})
