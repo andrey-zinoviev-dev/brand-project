@@ -75,16 +75,16 @@ if(layoutMenuButton) {
     links.classList.toggle('links_shown');
   })
 }
+if(localStorage.getItem('link_name')) {
+  const link = localStorage.getItem('link_name');
+  const foundLink = refs.find((ref) => { return ref.textContent = link});
+  if(foundLink) {
+    foundLink.classList.add('chosen_link');
+  }
+}
 
 refs.forEach((ref) => {
-  console.log(refs);
   ref.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    console.log(ref);
-    refs.forEach((ref) => {
-      ref.classList.remove('link_underlined');
-    });
-    ref.classList.add('link_underlined');
-    localStorage.setItem('links', JSON.stringify(refs));
+    localStorage.setItem('link_name', ref.textContent)
   })
 })

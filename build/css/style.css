@@ -2682,6 +2682,9 @@ footer .wrapper .refs :not(:last-of-type) {
 .links a:last-of-type {
   border: none;
 }
+.links a.chosen_link {
+  font-weight: 700;
+}
 .links.links_shown {
   display: flex;
 }

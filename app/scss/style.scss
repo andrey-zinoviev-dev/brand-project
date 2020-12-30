@@ -23,6 +23,9 @@
         &:last-of-type {
             border: none;
         }
+        &.chosen_link {
+            font-weight: 700;
+        }
     }
     &.links_shown {
         display: flex;
