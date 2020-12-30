@@ -2,14 +2,30 @@
 @import "container", "header", "services-list.scss", "main_wrapper", "main_page_card", "brief_submitted", "button.scss", "projects_main.scss", "project_main.scss", "project_services.scss", "docs_of_project.scss", "project_results", "results_tab.scss", "brief_tab.scss", "documents.scss", "chats.scss", "catalogue.scss", "profile_edit.scss", "popup.scss", "footer.scss";
 .links {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
-    right: 0;
+    top: 44px;
+    min-width: 225px;
+    border-radius: 10px;
+    z-index: 4;
+    padding: 10px;
+    background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+    box-shadow: -14.9774px -14.9774px 24.9624px rgba(255, 255, 255, 0.8), 12.4812px 12.4812px 24.9624px rgba(166, 180, 200, 0.7);
     a {
         color: #1859FF;
         text-decoration: none;
+        border-bottom: 1px solid #B8B8B8;
+        padding: 5px;
+        &:visited {
+            color: #26A240;
+        }
+        &:last-of-type {
+            border: none;
+        }
     }
-    
+    &.links_shown {
+        display: flex;
+    }
 }
 body {
     margin: 0;

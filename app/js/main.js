@@ -18,17 +18,21 @@ const hintDivBottom = document.querySelector('.hint_bottom');
 const hintShapeBottom = document.querySelector('.shape_bottom');
 const attachDocument = document.querySelector('.send');
 const sendMessage = document.querySelector('.send_message');
-
-
+const layoutMenuButton = document.querySelector('.menu_dropdown');
+const links = document.querySelector('.links');
+console.log(layoutMenuButton);
 if(uploadImagePage) {
   uploadImagePage.addEventListener('click', (evt) => {
     popup.classList.add('popup_opened');
   });
 }
-closeUploadPopup.addEventListener('click', (evt) => {
-  popup.classList.remove('popup_opened');
-  attachDocumentPopup.classList.remove('popup_opened');
-});
+if(closeUploadPopup) {
+  closeUploadPopup.addEventListener('click', (evt) => {
+    popup.classList.remove('popup_opened');
+    attachDocumentPopup.classList.remove('popup_opened');
+  });
+}
+
 if(deleteAccountPopup) {
   deleteAccountPopup.addEventListener('click', () => {
     popup.classList.add('popup_opened');
@@ -63,5 +67,10 @@ if(attachDocument) {
 if(sendMessage) {
   sendMessage.addEventListener('click', () => {
     sendMessagePopup.classList.add('popup_opened');
+  })
+}
+if(layoutMenuButton) {
+  layoutMenuButton.addEventListener('click', () => {
+    links.classList.toggle('links_shown');
   })
 }

@@ -63,6 +63,12 @@ header .wrapper .dropdown a {
 header .wrapper .dropdown :not(:last-child) {
   border-bottom: 1px solid #B8B8B8;
 }
+header .menu_dropdown {
+  margin-right: 100px;
+}
+header .menu_dropdown span {
+  margin-right: 12px;
+}
 
 ul {
   list-style: none;
@@ -2653,13 +2659,30 @@ footer .wrapper .refs :not(:last-of-type) {
 
 .links {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
-  right: 0;
+  top: 44px;
+  min-width: 225px;
+  border-radius: 10px;
+  z-index: 4;
+  padding: 10px;
+  background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+  box-shadow: -14.9774px -14.9774px 24.9624px rgba(255, 255, 255, 0.8), 12.4812px 12.4812px 24.9624px rgba(166, 180, 200, 0.7);
 }
 .links a {
   color: #1859FF;
   text-decoration: none;
+  border-bottom: 1px solid #B8B8B8;
+  padding: 5px;
+}
+.links a:visited {
+  color: #26A240;
+}
+.links a:last-of-type {
+  border: none;
+}
+.links.links_shown {
+  display: flex;
 }
 
 body {

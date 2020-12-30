@@ -3,8 +3,45 @@ header
     a(href="index.html")
       img(src="./pic/Logo.png", alt="")
     .wrapper
-      button
-        img(src="./pic/user_pic_rectang.png", alt="")
-        img.arrow(src="./pic/arrow.svg", alt="")
-      include ./header_dropdown_menu.pug
+      button.menu_dropdown
+        span Меню верстки
+        img.arrow(src="./pic/arrow.svg" alt="")
+        .links
+          a(href="brief_submitted.html") Главная страница (отправлен бриф)
+          a(href="brief_and_docs_submitted.html") Главная (отправлены бриф и документы)
+          a(href="email_submitted.html") Почта подтверждена
+          a(href="projects.html") Все проекты</a>
+          a(href="project.html") Выбранный проект</a>
+          a(href="project_unsubmitted_brief.html") Проект (неподтвержден бриф)
+          a(href="project_approved_brief.html") Проект (утвержден бриф)
+          a(href="project_services_set.html") Проект (выбраны услуги)
+          a(href="project_services_approved.html") Проект (услуги подтверждены)
+          a(href="project_docs_uploaded.html") Проект (документы отправлены)
+          a(href="project_docs_approved.html") Проект (документы подтверждены)
+          a(href="project_results.html") Проект (результаты)
+          a(href="review.html") Отзыв
+          a(href="pick_services.html") Проект (выбор услуг)
+          a(href="services_invoice.html") Проект (счет полаты услуг)
+          a(href="project_services_tab.html") Проект (страница услуг)
+          a(href="docs_of_project.html") Проект (страница документов)
+          a(href="documents_tab.html") Проект (документы проекта)
+          a(href="results_tab.html") Проект (страница результатов)
+          a(href="close_project.html") Проект (завершение проекта)
+          a(href="brief_tab.html") Проект (страница брифа)
+          a(href="documents.html") Документы (перечень проектов)
+          a(href="project_documents.html") Документы проекта
+          a(href="chats.html") Чаты
+          a(href="project_chat.html") Чаты проекта
+          a(href="chat_search.html") Чаты поиск
+          a(href="catalogue.html") Услуги
+          a(href="new_services_invoice.html") Счет на слуги нового проекта
+          a(href="profile_alexey.html") Редактирование профиля пользователя
+          a(href="profile_edit_filled.html") Профиль
+          a(href="profile_companies.html") Профиль (все компании)
+          a(href="profile_company.html") Профиль одной компании
+          a(href="profile_company_edit.html") Редактирование профиля компании
+        button
+          img(src="./pic/user_pic_rectang.png", alt="")
+          img.arrow(src="./pic/arrow.svg", alt="")
+        include ./header_dropdown_menu.pug
    
