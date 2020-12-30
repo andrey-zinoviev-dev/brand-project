@@ -1,0 +1,46 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект № 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Оставить отзыв
+      .brief_block.company.review
+        h2.docs_project Оставьте нам отзыв
+        form(action="/")
+          .wrapper
+            .account_input.margin_bottom
+              .span_column
+                span Ваше имя
+                input.tiny(type="text", autocomplete="off", value="Алексей")
+            .account_input.margin_bottom
+              .span_column
+                span Ваша фамилия
+                input.tiny(type="text", autocomplete="off", value="Алехин")
+          .wrapper
+            .account_input.no_margin
+              .span_column
+                span Ваша должность
+                input.tiny(type="text", autocomplete="off", value="Менеджер")
+            .account_input.no_margin
+              .span_column
+                span Ваш телефон (необязательное поле)
+                input.tiny(type="text", autocomplete="off", value="89993211232")
+          .wrapper.editable_zone
+            span Отзыв
+            .review_zone(contenteditable='true')
+              p Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim...
+            .file.review_file
+              .wrapper
+                img(src="./pic/doc.svg", alt="документ")
+                span Письменная благодарность.pdf
+              button
+                img(src="./pic/delete_icon.svg", alt="")
+          .buttons
+            button 
+              img(src="./pic/upload.svg", alt="")
+              span Прикрепить файл
+            button.blue Отправить

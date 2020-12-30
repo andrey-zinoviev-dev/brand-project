@@ -1,0 +1,23 @@
+.nav {
+  list-style: none;
+  padding: 0;
+}
+.nav .nav-element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  cursor: pointer;
+}
+.nav .nav-element.active svg path {
+  fill: #1859FF;
+}
+.nav .nav-element.active svg rect {
+  stroke: #1859FF;
+}
+.nav .nav-element.active a {
+  color: #1859FF;
+}
+.nav .nav-element .nav-element-link {
+  font-size: 18px;
+  margin-left: 16px;
+}

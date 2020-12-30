@@ -1,0 +1,19 @@
+html(lang="ru")
+  head
+    title Brandhub
+    link(rel="stylesheet", href="./css/style.css")
+  body
+    .container
+      include ../included/header.pug
+      include ../included/profile_edit_filled.pug
+      include ../included/footer.pug
+    section.popup
+      .popup_container.account
+        button.close_popup
+          img(src="./pic/close_popup.svg", alt="")
+        h3 Вы точно хотите удалить учетную запись?
+        .buttons
+          button Да
+          button.blue Нет
+      .overlay
+    script(src="./js/main-dist.js")

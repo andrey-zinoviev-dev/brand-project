@@ -1,0 +1,21 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Закрыть проект
+      .wrapper.finalize
+        img(src="./pic/success_logo.svg", alt="")
+        h2 Поздравляем! Ваш проект завершен
+        span Все документы по проекту лежат в разделе "Документы"
+        span.large_margin Результаты работ вы сможете посмотреть, открыв проект
+        .buttons
+          span.hidden Пожалуйста, оставьте нам отзыв
+          a(href="../../build/review.html")
+            button.blue Оставить отзыв
+          a.hidden(href="../../build/index.html")
+            button.blue Главная страница

@@ -1,0 +1,78 @@
+main
+  .main_wrapper
+    include ./main_dashboard_profile.pug
+    .wrapper.wrapper_projects
+      .route
+        span Профиль
+        img(src="./pic/arrow_right.svg", alt="")
+        span ООО "Рога и копыта"
+      h2 Профиль
+      .brief_block.company
+        h3 ООО "Рога и копыта"
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span ИНН
+              input.medium(type="text", autocomplete="off", value="2535235235")
+            button Ввести ИНН
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span Название компании
+              input.large(type="text", autocomplete="off", value="ООО 'Рога и копыта'")
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span Юридический адрес
+              input.large(type="text", autocomplete="off", value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra facilisis. Eget aliquet lorem enim donec sagittis")
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span Почтовый адрес
+              input.large(type="text", autocomplete="off", value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra facilisis. Eget aliquet lorem enim donec sagittis")
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span ИНН
+              input(type="text", autocomplete="off", value="13223132113131")
+          .account_input.no_margin
+            .span_column
+              span КПП
+              input(type="text", autocomplete="off", value="13123132113131")
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span ОГРН
+              input(type="text", autocomplete="off", value="13223132113131")
+          .account_input.no_margin
+            .span_column
+              span ОКТМО
+              input(type="text", autocomplete="off", value="13123132113131")
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span ОКВЭД
+              input.large(type="text", autocomplete="off", value="13223132113131")
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span Банк
+              input(type="text", autocomplete="off", value="'ОАО Банк'")
+          .account_input.no_margin
+            .span_column
+              span Расчетный счет (Р/С) 
+              input(type="text", autocomplete="off", value="13123132113131")
+        .wrapper.margin_bottom
+          .account_input.no_margin
+            .span_column
+              span Корреспондетский счет (К/С)
+              input(type="text", autocomplete="off", value="1312313213131")
+          .account_input.no_margin
+            .span_column
+              span БИК 
+              input(type="text", autocomplete="off", value="13123132113131")
+        .buttons
+          button.blue Сохранить     
+
+          
+          

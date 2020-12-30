@@ -1,0 +1,32 @@
+main
+  .main_wrapper
+    include ./main_dashboard_profile.pug
+    .wrapper.wrapper_projects.wrapper_profile
+      h2.docs_project Профиль
+      .stages.profile
+        button.stage.clicked Редактировать профиль
+        button.stage
+          a(href="#") Информация о компании
+      .profile_info.filled
+        h3 Информация профиля
+        .profile_wrapper
+          .text_zone
+            h4 Алексей Алехин
+            span Номер телефона:<br>
+            span.margin_bottom +7 123 333 44 55
+            span Текущий email:<br>
+            span sample@mail.ru
+          .image_wrapper
+            img(src="./pic/user_pic_rectang.png", alt="")
+        a(href="../../build/profile_alexey.html")
+          button.blue Редактировать
+      .profile_info.small_padding
+        h3 Изменение пароля
+        .profile_wrapper
+          span Хотите изменить параметры входа в аккаунт?
+          button Изменить пароль
+      .profile_info.small_padding
+        h3 Удалить учетную запись
+        .profile_wrapper
+          span Удаление учетной записи придете к удалению всего<br>ее содержимого и всех связанных с ней данных.
+          button.delete_account Изменить пароль

@@ -1,0 +1,29 @@
+main
+  .main_wrapper
+    include ./main_dashboard_documents.pug
+    .wrapper.wrapper_projects
+      .route
+        span Документы
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+      .wrapper
+        h2 Проект № 000001
+        button
+          a(href="../../build/documents_tab.html").redirect Перейти к проекту
+      .wrapper.padding.border
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Бриф
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Проектная документация
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Результаты работ
+      .wrapper.align_left.padding
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Все документы по проекту
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Все добавленные документы

@@ -1,0 +1,124 @@
+main
+  .main_wrapper
+    include ./main_dashboard_catalogue.pug
+    .wrapper.wrapper_projects
+      h2.chats_page Каталог услуг
+      p.catalogue_para Тут хранится весь перечень услуг, вы можете добавить услугу <br> к проекту или узнать подробнее
+      h3 Основные услуги
+      .catalogue 
+        .service
+          h4 Новый бренд или ребрендинг
+          p Создать новый бренд или проанализировать и освежить Текущий
+          span В пакет входит
+          ul
+            li Нейминг х3
+            li Логотип х2
+            li Фирменные носители х2
+            li Фирменный стиль х2
+          span <b>Цена: 150 000</b>
+          span <b>Срок: 4 недели</b>
+          .buttons.add_to_project.clicked
+            button Добавить в текущий проект
+            a(href="../../build/new_services_invoice.html") 
+              button.no_underline Новый проект
+          .buttons
+            button Новый проект
+        .service
+          h4 Дизайн сайта
+          p Стать заметнее в интернете: разработка дизайна сайта, рекламы и соц.сетей
+          span В пакет входит
+          ul
+            li Логотип х2
+            li Дизайн лендинга x1
+            li Оформление социальных сетей х1
+          span <b>Цена: 99 000 Р</b>
+          span <b>Срок: 3 недели</b>
+          .buttons
+            button Новый проект
+        .service
+          h4 Аудит бренда
+          p Практические рекомендации, как улучшить существующий бренд
+          span В пакет входит
+          ul
+            li Аудит бренда
+          span <b>Цена: 5 000 Р</b>
+          span <b>Срок: 3 дня</b>
+          .buttons
+            button Новый проект
+        .service
+          h4 Маркетплейс
+          p Быстро разместиться на маркет плейсе
+          span В пакет входит
+          ul
+            li Логотип и этикетка х2
+            li Дизайн товарных карточек х5
+            li Заведение на маркетплейс
+          span <b>Цена: 130 000 Р</b>
+          span <b>Срок: 3 недели</b>
+          .buttons
+            button Новый проект
+        .service
+          h4 Дизайн упаковки
+          p Разработать новый бренд для полки или интернет-витрины
+          span В пакет входит
+          ul
+            li Название х3
+            li Дизайн упаковки х2
+            li Финализация
+          span <b>Цена: 240 000 Р</b>
+          span <b>Срок: 5 недели</b>
+          .buttons
+            button Новый проект
+      .heading_wrapper
+        h3 Дополнительные услуги
+        .info
+            p i
+      .services.services_catalogue
+        .buttons_row
+          button.blue Копирайт
+          button Корпоративные носители
+          button Наружная реклама
+        .nested_services
+          .service
+            .text
+              span Название
+              span.underline 20 000 P
+            .multiplier
+              button -
+              .count
+                span 0
+              button +
+          .service
+            .text
+              span Дескриптор
+              span.underline 10 000 P
+            .multiplier
+              button -
+              .count
+                span 1
+              button +
+          .service
+            .text  
+              span Слоган
+              span.underline 15 000 P
+            .multiplier
+              button -
+              .count
+                span 1
+              button +
+          .buttons
+            button.blue Добавить в текущий проект
+            button Новый проект
+        .buttons_row
+          button Оформление транспорта
+          button Полиграфия
+          button Представительная продукция
+        .buttons_row
+          button Сувенирная продукция
+          button Рекламные POS
+          button Упаковочные и сервисные материалы
+        .buttons_row
+          button Фирменна одежда и аксессуары
+          button Digital
+          button Разработка упаковки
+        

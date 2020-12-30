@@ -1,0 +1,19 @@
+.card {
+  max-width: 260px;
+  padding: 30px 0 44px 0;
+  text-align: center;
+  background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+  box-shadow: -14.9774px -14.9774px 24.9624px rgba(255, 255, 255, 0.8), 12.4812px 12.4812px 24.9624px rgba(166, 180, 200, 0.7);
+  border-radius: 10px;
+}
+.card img {
+  max-width: 150px;
+  margin-bottom: 40px;
+}
+.card h3 {
+  font-size: 20px;
+  margin: 0 0 14px 0;
+}
+.card p {
+  margin: 0 38px 47px 38px;
+}

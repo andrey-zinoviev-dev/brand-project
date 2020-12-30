@@ -1,0 +1,43 @@
+main
+  .main_wrapper
+    include ./main_dashboard_chats.pug
+    .wrapper.wrapper_projects
+      .route
+        span Чаты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект № 000001
+      h2.chats_page Проект № 000001
+      p Тут хранится переписка по всем проектам, чтобы <br> найти сообщения воспользуйтесь поиском.
+      form.search
+        input(type="text", name="keyword", placeholder="Искать сообщение")
+        button.blue(type="submit")
+          img(src="./pic/search.svg", alt="")
+        img.absolute_position(src="./pic/search_grey.svg", alt="")
+      .block.chat_page.active
+        .info
+          .stage_toggle 
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 2. Выбор услуг
+        .chat
+          .message
+            p Нам будет очень 
+              span.highlighted приятно
+              p если вы рассмотрите возможность того-то там 
+          .message.client
+            p Сообщение от клиента
+        .buttons 
+          a(href="#") Перейти к переписке>
+      .block.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 6. Закрытие проекта
+        .chat
+          .message
+            p Вы молодец, нам тоже понравилось
+          .message.client
+              p 
+              span.highlighted Приятно
+              span  слышать!
+        .buttons
+          a(href="#") Перейти к переписке>

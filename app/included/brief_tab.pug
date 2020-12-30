@@ -1,0 +1,129 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Бриф
+      h2.docs_project Проект № 000001
+      .stages
+        button.stage Текущий этап
+        button.stage.clicked Бриф
+        button.stage 
+          a(href="../../build/project_services_tab.html") Выбранные услуги
+        button.stage Документы
+        button.stage
+          a(href="../../build/results_tab.html")  Результат работ
+      .brief_block 
+        h3 Основная информация
+        .notification
+          .text
+            p Бриф отклонен. Пожалуйста, заполните все поля, нажав редактировать
+          button.close
+            img(src="./pic/cross.png", alt="")
+        .wrapper.margin_bottom
+          span <b>Категория бизнеса</b>
+          span Искусство и культура
+        .wrapper.margin_bottom
+          span <b>Краткое описание продукта:</b>
+          span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra velit facilisis. Eget aliquet lorem enim donec sagittis, a aliquet nisi mattis
+        .wrapper.margin_bottom
+          span <b>Выбранная услуга:</b>
+          span.grey Не заполнено
+        .wrapper.margin_bottom
+          span <b>Причина:</b>
+          span.grey Не заполнено
+        .wrapper.margin_bottom
+          span <b>Название бренда:</b>
+          span.grey Не заполнено
+        .buttons.margin_bottom
+          button.blue Редактировать
+          button Помощь
+      .brief_block 
+        h3 Целевая аудитория
+        .notification
+          .text
+            p Бриф отклонен. Пожалуйста, заполните все поля, нажав редактировать
+          button.close
+            img(src="./pic/cross.png", alt="")
+        .wrapper.margin_bottom
+          span <b>Тип настроек</b>
+          span Самостоятельная настройка
+        .wrapper.margin_bottom
+          span <b>Параметры:</b>
+          span.grey Не заполнено
+        .wrapper.margin_bottom
+          span <b>Дополнительная информация</b>
+          span.grey Не заполнено
+        .wrapper
+          span <b>Мотивы потребления:</b>
+          span.grey Не заполнено
+        .buttons
+          button.blue Редактировать
+          button Помощь
+      .brief_block 
+        h3.margin_bottom Характеристики продуктов компании
+        .wrapper.margin_bottom
+          span <b>Продукт по Value Grid:</b>
+          span Приоритетный игрок <br> (то же самое за ту же цену)
+        .wrapper.margin_bottom
+          span <b>Параметры:</b>
+          span Пол: М <br> Доход: от 80 000 руб/месяц <br> Возраст: от 28 до 58 <br> Дети: Есть <br> Потребительское поведение:<br> Трендсеттеры
+        .wrapper.margin_bottom
+          span <b>Продукт относительно<br> конкурентов и категорий</b>
+          span Лучшее
+        .wrapper.margin_bottom
+          span <b>Комментарий:</b>
+          span Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Porta<br> viverra viverra velit facilisis. Eget<br> aliquet lorem enim donec sagittis,<br> a aliquet nisi mattis. Non neque,<br> accumsan sed imperdiet<br> condimentum metus tincidunt<br> urna, mattis. Turpis faucibus tellus<br>feugiat ut pulvinar purus.
+        .wrapper.margin_bottom
+          span <b>Продуктовые параметры:</b>
+          span Performance: 5<br>Безопасность: 5<br>Стабильность качества: 4
+        .wrapper.margin_bottom
+          span <b>Характер бренда:</b>
+          span 80% Традиционный<br>20% Соверменный<br>50% Доступный<br>0% Дорогой<br>80% Яркий<br>20% Спокойный<br>60% Эмоциональный<br>40% Рациональный<br>70% Эксклюзивный<br>30% Массовый<br>100% Промышленный<br>0% Крафтовый<br>100% Городской<br>0% Сельский
+        .wrapper
+          span <b>Ассоциативный ряд:</b>
+          .images
+            .image_wrapper
+              .image
+                img(src="./pic/animal_wrapper.svg", alt="")
+                span Животное
+              .image
+                img(src="./pic/auto_image.svg", alt="")
+                span Авто
+            .image_wrapper
+              .image
+                img(src="./pic/fashion_image.svg", alt="")
+                span Фешн
+              .image
+                img(src="./pic/plant_image.svg", alt="")
+                span Растение
+            .image_wrapper
+              .image
+                img(src="./pic/architecture_image.svg", alt="")
+                span Архитектура
+        .buttons
+          button.blue Редактировать
+          button Помощь
+      .brief_block 
+        h3.margin_bottom Дополнительная информация
+        .wrapper.margin_bottom  
+          span <b>Комментарии к проекту:</b>
+          span Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Porta<br> viverra viverra velit facilisis. Eget<br> aliquet lorem enim donec sagittis,<br> a aliquet nisi mattis. Non neque,<br> accumsan sed imperdiet<br> condimentum metus tincidunt<br> urna, mattis. Turpis faucibus tellus<br>feugiat ut pulvinar purus.
+        .wrapper.less_margin
+          span <b>Документы к проекту:</b>
+          .wrap
+            .audio
+              .round
+                img(src="./pic/audio.svg", alt="")
+              span Голосовая заметка.wav
+        .wrapper.horizontal
+          .audio
+            img(src="./pic/doc.svg", alt="")
+            span НДА_для подрядчика (физ лицо)_АЭ.pdf
+        .buttons
+          button.blue Редактировать
+          button Помощь

@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+    head
+        title Brandhub
+        link(rel="stylesheet", href="./css/style.css")
+    .container
+        include ../included/header.pug
+        main
+            .main_wrapper
+                include ../included/main_dashboard.pug
+                .wrapper
+                    .notification
+                        .text
+                            p Ваш Email адрес не подтвержден, пожалуйста проверьте вашу почту.
+                            a(href="#") Отправить еще раз
+                        button.close
+                            img(src="./pic/cross.png", alt="")
+                    h1 Добро пожаловать, с чего начнем?
+                    include ../included/main_page_cards.pug
+                    //- include ../included/brief_submitted.pug
+                    //- include ../included/brief_and_docs_submitted.pug
+                //- include ../included/email_submitted.pug
+            //- include ../included/email_submitted.pug
+            //- include ../included/brief_submitted.pug
+            //- include ../included/brief_and_docs_submitted.pug
+        include ../included/footer.pug

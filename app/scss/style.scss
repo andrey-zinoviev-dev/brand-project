@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "container", "header", "services-list.scss", "main_wrapper", "main_page_card", "brief_submitted", "button.scss", "projects_main.scss", "project_main.scss", "project_services.scss", "docs_of_project.scss", "project_results", "results_tab.scss", "brief_tab.scss", "documents.scss", "chats.scss", "catalogue.scss", "profile_edit.scss", "popup.scss", "footer.scss";
+.links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 60px;
+    a {
+        color: #1859FF;
+        text-decoration: none;
+    }
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-weight: normal;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    background: #F8FBFF;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+button {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+}
+button, textarea, input {
+    font-family: "Roboto", sans-serif;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* {
+    outline: none;
+  }

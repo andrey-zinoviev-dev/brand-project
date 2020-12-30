@@ -1,0 +1,30 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Документы
+      h2.docs_project Проект № 000001
+      .stages
+        button.stage Текущий этап
+        a(href="../../build/brief_tag.html") 
+          button.stage Бриф
+        a(href="../../build/project_services.html")
+          button.stage Выбранные услуги
+        button.stage.clicked Документы
+        a(href="../../build/results_tab.html")  
+          button.stage Результат работ
+      .wrapper
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Бриф
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Проектная документация
+        .folder
+          img(src="./pic/folder.svg", alt="")
+          span Результаты работ

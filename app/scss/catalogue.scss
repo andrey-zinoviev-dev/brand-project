@@ -1,0 +1,74 @@
+.catalogue_para {
+  margin-bottom: 50px;
+}
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(2, 372px);
+  grid-gap: 40px;
+  margin-bottom: 81px;
+  .service {
+    background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+    border-radius: 10px;
+    padding: 30px 33px 29px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    h4 {
+      margin: 0 0 30px 0;
+    }
+    p {
+      margin: 0 0 20px 0;
+    }
+    ul {
+      min-width: 303px;
+      min-height: 104px;
+    }
+    li {
+      margin: 0;
+      line-height: 140%;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 46px;
+    }
+    button {
+      min-width: 221px;
+      max-width: 225px;
+      margin: 0;
+      font-size: 14px;
+      line-height: 110%;
+      padding: 16px 19px;
+    }
+    .add_to_project {
+      display: none;
+      background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+      box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+      border-radius: 10px;
+      padding: 19px;
+      max-width: 220px;
+      align-self: center;
+      position: absolute;
+      bottom: -19px;
+      button {
+        background: none;
+        box-shadow: none;
+        padding: 16px 18px;
+        border-radius: 0;
+        &:first-of-type {
+          border-bottom: 1px solid rgba(149, 149, 149, 0.5);
+          padding: 0 19px 16px 18px;;
+        }
+        &.no_underline {
+          border-bottom: none;
+          text-align: left;
+          padding: 16px 18px 0 18px;;
+        }
+      }
+      &.clicked {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects.results
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Перейти к файлам
+      h2.heading_bill Результаты работ: Проект №000001
+      .payment
+        p У вас есть <b>5 дней, чтобы проверить файлы и принять результаты работ.</b>
+        .progress_bar
+          span Осталось 4 дня
+          .progress
+            .filler
+      .wrapper.buttons.margin_bottom
+        a(href="../../build/results_tab.html") 
+          button.blue Результаты работ
+        button Добавить комментарий
+      h4 Документы по проекту
+      .docs.result
+        .text
+          span Наименование
+          span Получен
+          span.margin_left Статус
+          span Скачать
+        .doc.selected.first_curved
+          .wrapper
+            .radio
+              .custom_radio
+                .fill
+              span.anchor Акт 1
+            span 05.05.2020 12:08
+          span.grey Не подписан
+          button
+            img(src="./pic/download.svg", alt="")
+        .doc
+          .wrapper
+            .radio
+              .custom_radio
+                .fill
+              span.anchor Акт 2
+            span 05.05.2020 12:08
+          span.confirmed Подписан
+          button
+            img(src="./pic/download.svg", alt="")
+      .buttons.right_align  
+        button.blue Отправить

@@ -1,0 +1,6 @@
+.search {
+  display: flex;
+}
+.search input {
+  min-width: 725px;
+}

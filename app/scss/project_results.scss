@@ -1,0 +1,39 @@
+.results {
+  max-width: 727px;
+  .payment {
+    padding: 0;
+    margin-bottom: 36px;
+    border: none;
+    align-items: flex-start;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 26.64px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+  }
+  .wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    button {
+      margin: 0;
+    }
+    &.buttons {
+      &.margin_bottom {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .buttons {
+    margin: 0 0 60px 0;
+  }
+  button {
+    margin: 40px 0 0 0;
+  }
+  .right_align {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+

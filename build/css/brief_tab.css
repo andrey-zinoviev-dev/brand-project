@@ -1,0 +1,47 @@
+.brief_block {
+  padding: 60px 100px;
+  background: linear-gradient(134.17deg, #EFF2F8 4.98%, #F3F5F8 17.62%, #FCFCFC 94.88%);
+  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+  border-radius: 10px;
+}
+.brief_block .notification {
+  margin-bottom: 32px;
+}
+.brief_block .notification p {
+  font-size: 12px;
+  line-height: 16.8px;
+}
+.brief_block .notification .close {
+  margin: 0;
+}
+.brief_block .wrapper {
+  margin: 0 0 50px 0;
+}
+.brief_block .wrapper span {
+  font-size: 18px;
+  line-height: 24.3px;
+}
+.brief_block .wrapper span:first-of-type {
+  font-size: 20px;
+  line-break: 26.4px;
+}
+.brief_block .wrapper .image_wrapper {
+  display: flex;
+  margin-bottom: 26px;
+}
+.brief_block .wrapper .image_wrapper .image {
+  display: flex;
+  flex-direction: column;
+}
+.brief_block .wrapper .image_wrapper .image img {
+  margin-bottom: 8px;
+}
+.brief_block .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.brief_block .buttons button {
+  margin: 20px 0 0 0;
+  min-width: 214px;
+}

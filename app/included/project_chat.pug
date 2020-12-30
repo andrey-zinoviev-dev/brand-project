@@ -1,0 +1,132 @@
+main
+  .main_wrapper
+    include ./main_dashboard_chats.pug
+    .wrapper.wrapper_projects
+      .route
+        span Чаты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект № 000001
+      h2.chats_page Проект № 000001
+      p Тут хранится переписка по всем проектам, чтобы <br> найти сообщения воспользуйтесь поиском.
+      form.search
+        input(type="text", name="keyword", placeholder="Искать сообщение")
+        a(href="../../build/chat_search.html")
+          button.blue(type="submit")
+            img(src="./pic/search.svg", alt="")
+        img.absolute_position(src="./pic/search_grey.svg", alt="")
+      .block.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 1. Заполнение брифа
+        .chat.brief_sent
+          .message 
+            p Спасибо что отправили бриф, он отправлен на проверку, после того как он будет согласован и утвержден мы {{следующее действие}}.
+          .message.client  
+            p Мне понравилось вот что
+            .doc
+              img(src="./pic/doc.svg", alt="")
+              p Примеры работ
+            a(href="../../build/docs_of_project.html") Все загруженные документы>
+        .buttons
+      .block.chat_page.active
+        .info
+          .stage_toggle 
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 2. Выбор услуг
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+      .block.chat_page.active
+        .info 
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 3. Формирование проектной документации
+        .chat
+          .message
+            p Последнее сообщение от модератора
+        .buttons
+      .block.nested.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 4. Выполнение проекта
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+      .block.stage_nested.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 4.1 Стратегия бренда
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+      .block.stage_nested.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 4.2 Нейминг
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+      .block.stage_nested.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 4.3 Дизайн часть
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+      .block.stage_nested.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 4.4 Носители бренда
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+          button Задать вопрос
+      .block.chat_page.active
+        .info 
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 5. Результаты работ
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+      .block.chat_page.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 6. Закрытие проекта
+        .chat
+          .message
+            p Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.
+          .message.client
+            p Сообщение от клиента
+        .buttons
+
+      
+      

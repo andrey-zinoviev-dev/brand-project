@@ -1,0 +1,35 @@
+.results_tab {
+  .docs {
+    max-width: 727px;
+    .text {
+      margin-top: 20px;
+      .margin_left {
+        margin-left: 27px;
+      }
+      .wrap {
+        min-width: 317px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .doc {
+      .wrapper {
+        max-width: 345px;
+      }
+      &.selected {
+        background: #F8FBFF;
+      }
+      .radio {
+        .anchor {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .bottom {
+    margin-top: 100px;
+  }
+  .no_results {
+    display: block;
+  }
+}

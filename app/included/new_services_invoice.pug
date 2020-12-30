@@ -1,0 +1,59 @@
+main
+  .main_wrapper
+    include ./main_dashboard_catalogue.pug
+    .wrapper.wrapper_projects
+      .route
+        span Каталог услуг
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект № 000001
+      h2.chats_page Новый проект
+      .services.solo
+        .service.new_invoice
+          h3 Основные услуги
+          ul.new_services
+            li 
+              span Логотип. Разработка 1 варианта
+              .image_wrapper
+                .wrapper
+                  span 60 000 P
+                  button.close
+                    img(src="./pic/cross.png", alt="")
+                button Изменить
+        .service.additional
+          h3 Дополнительные услуги
+          ul.new_services
+            li
+              span Иллюстрация
+              .image_wrapper
+                .wrapper
+                  span 10 000 P
+                  button.close
+                    img(src="./pic/cross.png", alt="")
+            li
+              span Полиграфия
+              .image_wrapper
+                .wrapper
+                  span 10 000 P
+                  button.close
+                    img(src="./pic/cross.png", alt="")
+        .service.additional
+          h3 Есть промокод?
+          .wrapper.promo
+            span Введите и получить скидку
+            .coupon
+              input(type="text", name="coupon")
+              span.confirmed Промокод принят
+              button Применить
+        .action.invoice
+          .buttons
+            button.blue Заказать
+          .text
+            .text_block
+              span Все услуги:
+              span <b>80 000 Р</b>
+            .text_block
+              span Скидка:
+              span <b>-20 000 Р</b>
+            .text_block
+              span Итог: 60 000 Р
+          

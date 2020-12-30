@@ -1,0 +1,378 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.popup h3 {
+  margin: 0 0 20px 10px;
+  align-self: flex-start;
+  font-size: 24px;
+  line-height: 26.4px;
+}
+.popup p {
+  font-size: 12px;
+  line-height: 140%;
+  color: #959595;
+  align-self: flex-start;
+  margin-left: 10px;
+  margin: 0 0 10px 10px;
+}
+.popup span {
+  margin: 25px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 133.19%;
+}
+.popup .buttons button {
+  background: linear-gradient(134.17deg, #EFF2F8 4.98%, #F3F5F8 17.62%, #FCFCFC 94.88%);
+  box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.8), 10px 10px 20px rgba(166, 180, 200, 0.7);
+  border-radius: 10px;
+  padding: 22px 90px;
+}
+.popup .buttons button.margin {
+  margin-right: 34px;
+}
+.popup .buttons .blue {
+  background: linear-gradient(134.17deg, #BBCEFF 4.98%, #1859FF 94.88%);
+  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+  border-radius: 10px;
+  padding: 22px 90px;
+  color: white;
+  align-self: center;
+}
+.popup .buttons .gap {
+  margin-right: 34px;
+}
+.popup .blue {
+  background: linear-gradient(134.17deg, #BBCEFF 4.98%, #1859FF 94.88%);
+  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+  border-radius: 10px;
+  padding: 22px 90px;
+  color: white;
+  align-self: center;
+}
+.popup.doc_send .file {
+  border-top: 1px solid solid rgba(149, 149, 149, 0.5);
+  border-top: 1px solid rgba(149, 149, 149, 0.5);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  padding: 11px 15px;
+}
+.popup.doc_send .file img {
+  margin: 0 10px 0 0;
+}
+.popup.doc_send .file span {
+  margin: 0;
+}
+.popup.doc_send .file button {
+  background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+  box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.8), 3px 3px 14px rgba(144, 165, 194, 0.65);
+  border-radius: 10px;
+}
+.popup.doc_send .file button img {
+  margin: 0;
+}
+.popup.doc_send .buttons button {
+  padding: 16px 57px;
+}
+.popup.popup_send_message .popup_container {
+  padding: 49px 52px;
+}
+.popup.popup_send_message h3 {
+  margin: 0 0 18px 0;
+}
+.popup.popup_send_message .drop {
+  min-width: 410px;
+  padding: 8px 11px;
+  background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(193, 199, 207, 0.55);
+  border: none;
+}
+.popup.popup_send_message .buttons {
+  margin: 40px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.popup.popup_send_message .buttons button {
+  padding: 18px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 214px;
+}
+.popup.popup_send_message .buttons button img {
+  margin-right: 10px;
+}
+.popup.popup_send_message .buttons button span {
+  margin: 0;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+}
+.popup.popup_send_message .message_div {
+  padding: 8px 11px 0 11px;
+  background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(193, 199, 207, 0.55);
+  border-radius: 10px;
+  min-width: 586px;
+  min-height: 173px;
+  resize: none;
+  margin-bottom: 29px;
+}
+.popup.popup_send_message .message_div::placeholder {
+  font-size: 18px;
+}
+.popup.popup_send_message .file {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 15px;
+  border-top: 1px solid rgba(149, 149, 149, 0.5);
+  margin: 0;
+  position: relative;
+}
+.popup.popup_send_message .file .wrapper img {
+  margin-right: 10px;
+}
+.popup.popup_send_message .file .wrapper span {
+  margin: 0;
+}
+.popup.popup_send_message .file button {
+  background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+  box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.8), 3px 3px 14px rgba(144, 165, 194, 0.65);
+  border-radius: 10px;
+}
+.popup.popup_send_message .file_delete {
+  display: none;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  background: #FEFEFF;
+  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 3px 3px 10px rgba(167, 170, 174, 0.65);
+  border-radius: 10px;
+  min-width: 225px;
+  flex-direction: column;
+  margin: 0;
+  font-size: 16px;
+  line-height: 21.31px;
+  font-weight: 400;
+  z-index: 2;
+}
+.popup.popup_send_message .file_delete span {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21.31px;
+  font-weight: 400;
+  padding: 23px 13px;
+  border-bottom: 1px solid rgba(149, 149, 149, 0.5);
+}
+.popup.popup_send_message .file_delete .buttons {
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 53px;
+}
+.popup.popup_send_message .file_delete .buttons button {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  min-width: 0;
+}
+.popup.popup_send_message .file_delete.clicked {
+  display: flex;
+}
+.popup.popup_payment .buttons button {
+  padding: 16px 38px;
+}
+
+.popup_opened {
+  display: flex;
+}
+
+.popup_container {
+  position: relative;
+  z-index: 2;
+  background: #F8FBFF;
+  border-radius: 10px;
+  padding: 59px 141px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popup_container.account {
+  padding: 59px 95px 45px 95px;
+  min-width: 691px;
+  box-sizing: border-box;
+}
+.popup_container.account h3 {
+  margin: 0 auto 59px;
+}
+.popup_container.account .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.popup_container.doc_upload {
+  padding: 59px 88px 77px 88px;
+}
+.popup_container.doc_upload h3 {
+  max-width: 410px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+.popup_container.doc_upload h3.wide .audio {
+  right: -20px;
+}
+.popup_container.doc_upload .audio {
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+.popup_container.doc_upload .round {
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+}
+.popup_container.doc_upload .round span {
+  margin: 0;
+  font-size: 12px;
+  color: white;
+}
+.popup_container.doc_upload h3 {
+  font-size: 24px;
+  line-height: 26.4px;
+}
+.popup_container.doc_upload span {
+  margin: 25px 0;
+}
+.popup_container.doc_upload p {
+  margin: 0 auto 30px;
+  font-size: 24px;
+  color: #3C3C3B;
+  line-height: 26.4px;
+  max-width: 478px;
+}
+.popup_container.doc_upload .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup_container.doc_upload .white {
+  max-width: 241px;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: center;
+  min-width: 241px;
+}
+.popup_container.doc_upload .white span {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+}
+.popup_container .hint {
+  display: none;
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 261px;
+  background: linear-gradient(134.17deg, #F9F9FB 4.98%, #FFFFFF 94.88%);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 5px 15px rgba(144, 165, 194, 0.65);
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 125px;
+  right: 20px;
+}
+.popup_container .hint h4 {
+  margin: 0 0 10px 0;
+}
+.popup_container .hint p {
+  font-size: 14px;
+  line-height: 15.4px;
+  font-weight: 400;
+  margin: 0;
+}
+.popup_container .hint.hint_bottom {
+  right: 50px;
+  bottom: 35px;
+  top: 70%;
+}
+.popup_container .hint.hint_opened {
+  display: block;
+}
+.popup_container .shape {
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 115px;
+  right: 144px;
+  background: #FFFFFF;
+}
+.popup_container .shape.shape_bottom {
+  top: 343px;
+  right: 119px;
+}
+.popup_container .shape.hint_opened {
+  display: block;
+}
+
+.drop {
+  max-width: 410px;
+  min-height: 170px;
+  display: flex;
+  background: #F2F6FB;
+  border: 1px dashed #CECECE;
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+  padding: 61px 35px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 140%;
+  color: #959595;
+}
+.drop label {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.close_popup {
+  position: absolute;
+  top: 29px;
+  right: 32px;
+}
+.close_popup.image {
+  max-width: 12px;
+  max-height: 12px;
+  top: 145px;
+  right: 220px;
+}
+
+.circle {
+  border-radius: 50%;
+  min-width: 142px;
+  min-height: 142px;
+  margin: 44px 0 66px 0;
+}

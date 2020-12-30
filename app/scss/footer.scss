@@ -1,0 +1,33 @@
+footer {
+  padding: 39px 0 29px 0;
+  width: 100%;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    img {
+      max-width: 164px;
+    }
+    ul {
+      display: flex;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      :not(:last-of-type) {
+        margin-right: 24px;
+      }
+    }
+    .refs {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      img {
+        max-width: 22px;
+      }
+      :not(:last-of-type) {
+        margin-right: 14px;
+      }
+    }
+  }
+}

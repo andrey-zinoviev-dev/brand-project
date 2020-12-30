@@ -1,0 +1,34 @@
+main
+  .main_wrapper
+    include ./main_dashboard.pug
+    .wrapper
+      .submitted_cards  
+        .card
+          .text_wrapper
+            h3 Текущий проект
+            .info
+              p i
+              .shape.show_hint
+          .hovered_block.show_hint
+            p тут будут отражены все обновления по текущему проекту: Заказ № {{Номер}}  
+          h4 Бриф заполнен <br> и отправлен
+          span 2 мая, 12:08
+          p Спасибо, что отправили бриф, он направлен на проверку, после того..
+            a(href="#") Читать полностью>
+          button К проекту
+        .card.second
+          .text_wrapper
+            h3 Документы
+            .info
+              p i
+              .shape
+          .hovered_block
+            p тут будут отражены все обновления <br> по текущему проекту: Заказ № {{Номер}}
+          h4 Документов <br> пока что нет...
+          p Не волнуйтесь, они скоро появятся
+          button Все документы
+        .card.last
+          img(src="./pic/docs_logo.png", alt="")
+          h3 Дополнительные <br> услуги
+          p Возможно они вас заинтересуют
+          button Посмотреть

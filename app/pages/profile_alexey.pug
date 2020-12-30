@@ -1,0 +1,26 @@
+html(lang="ru")
+  head
+    title Brandhub
+    link(rel="stylesheet", href="./css/style.css")
+  body
+    .container
+      include ../included/header.pug
+      include ../included/profile_alexey.pug
+      include ../included/footer.pug
+    section.popup
+      .popup_container
+        button.close_popup
+          img(src="./pic/close_popup.svg", alt="")
+        h3 Загрузить изображение профиля
+        p Изображения формата JPG, PNG, GIF. Размер 800 kb
+        input(type="file", id="file")
+        .drop
+          label(for="file") Перетащите сюда изображение, чтобы мгновенно его загрузить
+        span или
+        button.blue Добавить изображение
+        //- img.circle(src="./pic/user_pic_rectang.png", alt="")
+        //- button.close_popup.image
+        //-   img(src="./pic/cross.png", alt="")
+        //- button.blue Загрузить
+      .overlay
+    script(src="./js/main-dist.js")

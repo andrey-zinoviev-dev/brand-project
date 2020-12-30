@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+    padding: 0;
+    min-width: 251px;
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+        &.active {
+            .chat {
+                path {
+                    fill: white;
+                    stroke: #1859FF;
+                }
+            }
+            svg path {
+                fill: #1859FF;
+                stroke: #1859FF;
+            }
+            svg rect {
+                stroke:  #1859FF;
+            }
+
+            :last-of-type {
+                stroke: white;
+            }
+            a {
+                color: #1859FF;
+            }
+        }
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: black;
+            span {
+                margin-left: 16px;
+            }
+        }
+    }
+}

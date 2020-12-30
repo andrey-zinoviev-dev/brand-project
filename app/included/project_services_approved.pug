@@ -1,0 +1,116 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+      h2 Проект № 000001
+      .stages
+        button.stage.clicked Текущий этап
+        button.stage
+          a(href="../../build/brief_tab.html") Бриф
+        button.stage
+          a(href="../../build/project_services_tab.html") Выбранные услуги
+        button.stage Документы
+        button.stage
+          a(href="../../build/results_tab.html") Результат работ
+      .payment
+        .payment_wrapper
+          span Стоимость услуг: 110 000 руб.
+          p Сформирована окончательная стоимость заказа
+          button.blue Оплата
+        .progress_bar
+          span 0% оплачено
+          .progress
+            .filler
+      .block.approved
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 1. Заполнение брифа
+            .status.approved
+              p Текущий статус
+              span Бриф утвержден
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 3 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message 
+            p Пожалуйста, заполните бриф
+        .buttons
+          a(href="../../build/project_unsubmitted_brief.html")
+            button.blue Заполнить бриф
+          button Задать вопрос
+      .block.approved
+        .info
+          .row
+            .stage_toggle 
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 2. Выбор услуг
+            .status.approved
+              p Текущий статус
+              span Услуги на согласовании
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 3 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Бриф был согласован. Предлагаем вам следующий перечень услуг в связи с задачей. Вы можете добавить их к проекту и отправить на согласование.
+          .message.client
+            .message_wrapper
+              p Выбраны следующие услуги:
+              p.service Новый бренд: 100 000 руб
+              p.service Дескриптор: 10 000 руб
+              p.service Слоган: 15 000 руб
+              p.service Итог: 110 000 руб
+          .message
+            p Выбранные услуги на согласовании, ожидайте.
+        .buttons
+          button Задать вопрос
+      .block.active
+        .info
+          .row 
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 3. Формирование проектной документации
+            .status
+              p Текущий статус
+              span Документы не загружены
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 4 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Документы на согласовании. Ожидайте около дня
+        .buttons
+          button Задать вопрос
+      .block
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 4. Выполнение проекта
+      .block
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 5. Результаты работ
+      .block
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 6. Закрытие проекта

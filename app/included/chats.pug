@@ -1,0 +1,27 @@
+main
+  .main_wrapper
+    include ./main_dashboard_chats.pug
+    .wrapper.wrapper_projects
+      h2.chats_page Чаты
+      p Тут хранится переписка по всем проектам, чтобы <br> найти сообщения воспользуйтесь поиском.
+      form.search
+        input(type="text", name="keyword", placeholder="Искать сообщение")
+        button.blue(type="submit")
+          img(src="./pic/search.svg", alt="")
+        img.absolute_position(src="./pic/search_grey.svg", alt="")
+      .chats
+        .box
+          h3 Проект # 000001
+          span Модератор:
+          .message
+            p Результаты работ доступны по ссылке ниже, также всегда сможете найти их в разделе документы
+            span 9 мая 2020
+          a(href="../../build/project_chat.html") Вся переписка>
+        .box
+          h3 Тест
+          span Администратор:
+          .message
+            p Это тест
+            span 9 мая 2020
+          a(href="../../build/project_chat.html") Вся переписка>
+        

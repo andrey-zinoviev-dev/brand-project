@@ -1,0 +1,57 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+      h2 Проект № 000001
+      .stages
+        button.stage.clicked Текущий этап
+        button.stage Бриф
+        button.stage Выбранные услуги
+          a(href="../../build/project_services_tab.html") Выбранные услуги
+        button.stage Документы
+        button.stage Результат работ
+      .block.active
+        .info
+          .stage_toggle
+            img(src="./pic/arrow.svg", alt="")
+            span Этап 1. Заполнение брифа
+          .status
+            p Текущий статус
+            span Бриф заполнен и отправлен
+          .refresh_date
+            .wrapper
+              p Последнее обновление
+              span 3 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat.brief_sent
+          .message 
+            p Спасибо что отправили бриф, он отправлен на проверку, после того как он будет согласован и утвержден мы {{следующее действие}}.
+          .message.client  
+            p.margin Мне понравилось вот что
+            .doc
+              img(src="./pic/doc_logo.svg", alt="")
+              p Примеры работ
+            a(href="#") Все загруженные файлы>
+        .buttons
+          //- button.blue Заполнить бриф
+          button Задать вопрос
+      .block
+        img(src="./pic/arrow.svg", alt="")
+        p Этап 2. Выбор услуг
+      .block
+        img(src="./pic/arrow.svg", alt="")
+        p Этап 3. Формирование проектной документации
+      .block
+        img(src="./pic/arrow.svg", alt="")
+        p Этап 4. Выполнение проекта
+      .block
+        img(src="./pic/arrow.svg", alt="")
+        p Этап 5. Результаты работ
+      .block
+        img(src="./pic/arrow.svg", alt="")
+        p Этап 6. Закрытие проекта

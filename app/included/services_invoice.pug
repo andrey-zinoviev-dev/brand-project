@@ -1,0 +1,37 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Оплата
+      h2.heading_bill Оплата
+      p.bill Сформирован счет на оплату по проекту: <b> Проект №000001 </b>
+      .services.solo.invoice
+        .service
+          h3 Основные услуги
+          ul
+            li 
+              span Новый бренд
+              span 100 000 Р
+        .service.additional
+          h3 Дополнительные услуги
+          ul
+            li
+              .wrapper
+                span Дескриптор
+              span 10 000 P
+            li
+              .wrapper
+                span Слоган
+              span 15 000 P
+        .action
+          .wrapper
+            button.blue Оплатить онлайн
+            span Итог: 125 000 Р
+          .buttons
+            button Скачать счет
+            button Задать вопрос

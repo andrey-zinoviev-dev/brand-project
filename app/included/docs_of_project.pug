@@ -1,0 +1,54 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects.results
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Документы
+      h2.docs_project Проект № 000001
+      p Составлен перечень документов на подписание: <br> <b>Договор №0000001, Приложение к договору № 000001
+      button.margin Добавить комментарий
+      .commentary.margin
+        .notification.files
+          p Вы не выбрали ни одного файла, пожалуйста укажите причину
+        .editable_area(contenteditable='true')
+        .file
+          .wrapper.row
+            img(src="./pic/doc.svg", alt="документ")
+            span Вопросы по проекту
+          button.marginless
+            img(src="./pic/delete_icon.svg", alt="")
+        button 
+          img(src="./pic/upload.svg", alt="")
+          span Прикрепить файл
+      .docs
+        .text
+          .wrapper
+            span Наименование
+            span Получен
+          span.margin_left Статус
+          span Скачать
+        .doc.selected.first_curved
+          .wrapper
+            .radio
+              .custom_radio
+                .fill
+              span.anchor Договор № 000001
+            span 05.05.2020 12:08
+          span.grey Не подписан
+          button
+            img(src="./pic/download.svg", alt="")
+        .doc
+          .wrapper
+            .radio
+              .custom_radio
+                .fill
+              span.anchor Приложение к договору № ...
+            span 05.05.2020 12:08
+          span.grey Не подписан
+          button
+            img(src="./pic/download.svg", alt="")  
+        button.blue.sign_docs Подписать

@@ -1,0 +1,14 @@
+button {
+  &.active {
+    background-image:linear-gradient(134.17deg, #BBCEFF 4.98%, #1859FF 94.88%) ;
+    color: white;
+  }
+  padding: 16px 45px;
+  color: black;
+  line-height: 22px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

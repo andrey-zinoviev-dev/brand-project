@@ -1,0 +1,57 @@
+html(lang="ru")
+    head
+      title Brandhub
+      link(rel="stylesheet", href="./css/style.css")
+    body
+      .container
+        include ../included/header.pug
+        include ../included/docs_of_project.pug
+        include ../included/footer.pug
+      section.popup
+        .popup_container.doc_upload
+          button.close_popup
+            img(src="./pic/close_popup.svg", alt="")
+          h3 Подписать онлайн с помощью сервиса "ЭДО Контур.Диадок"
+            .audio.audio_top
+              .round
+                span i
+          .hint
+            h4 Что это такое?
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra velit facilisis.
+          .shape
+          button.blue Подписать
+          span или
+          h3.wide <b>Скачать, подписать вручную и загрузить подписанный документ</b>
+            .audio.audio_bottom
+              .round
+                span i
+          .hint.hint_bottom
+            h4 Что это такое?
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra velit facilisis.
+          .shape.shape_bottom
+          .buttons
+            button.gap.white Скачать
+            button.white.send 
+              img(src="./pic/upload.svg", alt="")
+              span Прикрепить файл
+        .overlay
+      section.popup.doc_send
+        .popup_container
+          button.close_popup
+            img(src="./pic/close_popup.svg", alt="")
+          h3 Загрузить подписанный документ
+          input(type="file", id="file")
+          .drop
+            label(for="file") Перетащите сюда изображение, чтобы мгновенно его загрузить
+          //- span или
+          .file
+            .wrapper
+              img(src="./pic/doc.svg", alt="документ")
+              span Вопросы по проекту
+            button
+              img(src="./pic/delete_icon.svg", alt="")
+          .buttons
+            //- button Добавить документ
+            button.blue Загрузить
+        .overlay
+      script(src="./js/main-dist.js")

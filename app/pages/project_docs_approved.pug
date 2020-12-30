@@ -1,0 +1,19 @@
+html(lang="ru")
+    head
+        title Brandhub
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        .container
+            include ../included/header.pug
+            include ../included/project_docs_approved.pug
+            include ../included/footer.pug
+        section.popup.popup_payment.popup_opened
+            .popup_container
+                button.close_popup
+                    img(src="./pic/close_popup.svg", alt="")
+                h3 Оплата прошла успешно
+                img(src="./pic/success_logo.svg", alt="")
+                .buttons
+                    button.blue Перейти к проекту
+            .overlay
+        script(src="./js/main-dist.js")

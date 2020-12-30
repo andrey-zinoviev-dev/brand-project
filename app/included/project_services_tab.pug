@@ -1,0 +1,51 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects.result_project
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+      h2 Проект № 000001
+      .stages
+        button.stage Текущий этап
+        button.stage Бриф
+        button.stage.clicked Выбранные услуги
+        button.stage Документы
+        button.stage 
+          a(href="../../build/results_tab.html") Результат работ
+      .services.solo
+        .service
+          h3 Основные услуги
+          .service_wrapper
+            h4 Пакет "Новый бренд и ребрендинг"
+            span 100 000 P
+          ul
+            li 
+              span Нейминг
+              span 3 варианта
+            li  
+              span Логотип
+              span 2 варианта
+            li
+              span Фирменные носители
+              span 2 варианта
+            li
+              span Фирменный стиль
+              span 2 варианта
+        .service.additional
+          h3 Дополнительные услуги
+          ul
+            li
+              .wrapper
+                span Дескриптор
+                span x1
+              span 10 000 P
+            li
+              .wrapper
+                span Слоган
+                span x1
+              span 15 000 P
+        .action
+          .wrapper
+            span Итог: 125 000 Р

@@ -1,0 +1,82 @@
+main
+  .main_wrapper
+    include ./main_dashboard_profile.pug
+    .wrapper.wrapper_projects.profile_wrapper
+      h2.docs_project Профиль
+      .stages.profile
+        button.stage.clicked Редактировать профиль
+        button.stage
+          a(href="#") Информация о компании
+      .profile_info
+        h3 Информация профиля
+        .profile_wrapper
+          .image_wrapper
+            .pic
+              img(src="./pic/profile_logo.svg", alt="")
+            button.upload_image Загрузить
+          .text_zone
+            .text
+              span Ваше имя
+              input(type="text", name="name", autocomplete="off", value="Алексей")
+            .text
+              span Ваша фамилия
+              input(type="text", name="surname", autocomplete="off", value="Алехин")
+        button.blue Подтвердить и сохранить
+      .profile_info.large_padding
+        h3 Информация для входа в аккаунт
+        .notification
+          .text
+            p Ваш Email адрес не подтвержден, пожалуйста проверьте вашу почту.
+            a(href="#") Отправить еще раз
+          button.close
+            img(src="./pic/cross.png", alt="")
+        .input_wrapper
+          .account_input
+            .span_column
+              span Текущий email
+              input(type="text", autocomplete="off", value="sample@mail.ru")
+            button.blue Изменить email
+        .input_wrapper
+          .account_input
+            .span_column
+              span Номер телефона
+              input(type="text", autocomplete="off", value="+7 123 333 44 55")
+            button.blue Изменить номер
+        .input_wrapper
+          .account_input.no_bottom_margin
+            .span_column
+              span Пароль
+              input(type="password", autocomplete="off", value="password")
+            button.blue Изменить пароль
+      .profile_info
+        h3 Уведомления
+        form(action="/")
+          label(for="email").radio_wrapper
+            input(type="checkbox", name="email_notification", id="email")
+            .radio
+              .fill
+            span Получать уведомления на почту
+          label(for="services").radio_wrapper
+            input(type="checkbox", name="new_services_notification", id="services")
+            .radio
+              .fill
+            span Получать уведомления о новых услугах
+          label(for="newsletter").radio_wrapper
+            input(type="checkbox", name="newsletter_notification" id="newsletter")
+            .radio
+              .fill
+            span Информационная рассылка Brand Hub
+      .wrapper.last_notification
+        form(action="/")
+          label(for="personal_data").radio_wrapper
+            input(type="checkbox", name="email_notification", id="personal_data")
+            .radio
+              .fill
+            span 
+              a.underline(href="#") Согласие
+              span.no_margin  на хранение личных данных
+        .text_block
+          a(href="#") Пользовательское соглашение
+          a(href="#") Вопросы и ответы
+
+        

@@ -1,0 +1,20 @@
+main
+  .main_wrapper
+    include ./main_dashboard_profile.pug
+    .wrapper.wrapper_projects.wrapper_profile
+      h2.docs_project Профиль
+      .stages.profile
+        button.stage.clicked Редактировать профиль
+        button.stage
+          a(href="#") Информация о компании
+      a(href="../../build/profile_company.html").profile_info.company
+        h3 ООО "Рога и копыта"
+      .profile_info.company
+        h3 ИП Иванов
+      .profile_info.company
+        h3 Добавить компанию
+        .account_input
+          .span_column
+            span ИНН
+            input(type="text", autocomplete="off", placeholder="Введите ИНН")
+          button.blue Заполнить

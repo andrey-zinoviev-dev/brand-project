@@ -1,0 +1,46 @@
+.card {
+  text-align: left;
+}
+.card .text_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 23px 0 15px;
+}
+.card .text_wrapper h3 {
+  margin: 0;
+}
+.card .text_wrapper .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  border-radius: 10px;
+  background: linear-gradient(250.17deg, #BBCEFF 4.98%, #1859FF 94.88%);
+  box-shadow: -5px -5px 20px rgba(230, 230, 230, 0.8), 2px 2px 3px rgba(144, 165, 194, 0.35);
+}
+.card .text_wrapper .info p {
+  margin: 0;
+  color: #EBEFF7;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+}
+.card .text_wrapper .info .hovered_block {
+  display: none;
+}
+.card span {
+  font-size: 12px;
+  line-height: 140%;
+  color: #959595;
+}
+.card :first-of-type h4 {
+  margin: 35px 0 0 23px;
+}
+.card :first-of-type p {
+  margin: 16px 0px 140px 23px;
+}
+.card :first-of-type button {
+  margin-left: 23px;
+}

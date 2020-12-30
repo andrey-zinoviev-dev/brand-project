@@ -1,0 +1,39 @@
+main {
+  margin: 0 132px;
+  padding-bottom: 30px;
+}
+main .main_wrapper {
+  display: flex;
+}
+main .wrapper {
+  width: 100%;
+  max-width: 820px;
+  margin-left: 82px;
+}
+main .wrapper .notification {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(134.17deg, #FEB4B4 4.98%, #FFDEDE 94.88%);
+  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+  border-radius: 10px;
+  color: #de5959;
+  justify-content: space-between;
+  padding: 18px 18px 18px 22px;
+}
+main .wrapper .notification .text {
+  display: flex;
+  align-items: center;
+}
+main .wrapper .notification .text p {
+  margin: 0;
+}
+main .wrapper .notification .text a {
+  font-weight: 700;
+  margin-left: 5px;
+}
+main .wrapper .notification img {
+  max-width: 14px;
+}
+main .wrapper ::first-letter {
+  text-transform: capitalize;
+}

@@ -1,0 +1,46 @@
+html(lang="ru")
+    head
+        title Brandhub
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        .container
+            include ../included/header.pug
+            include ../included/project_unsubmitted_brief.pug
+            include ../included/footer.pug
+        section.popup.popup_send_message
+            .popup_container
+                button.close_popup
+                    img(src="./pic/close_popup.svg", alt="")
+                h3 Задать вопрос
+                form
+                    textarea(name="", cols="30", rows="10", placeholder="Введите ваше сообщение").message_div
+                    .file
+                        .wrapper
+                            img(src="./pic/doc.svg", alt="документ")
+                            span Примеры работ
+                        button
+                            img(src="./pic/delete_icon.svg", alt="")
+                        .buttons.file_delete.clicked
+                            span Удалить файл?
+                            .buttons
+                                button.white Да
+                                button.white Нет
+                    .file
+                        .wrapper
+                            img(src="./pic/doc.svg", alt="документ")
+                            span Вопросы по проекту
+                        button.delete_button
+                            img(src="./pic/delete_icon.svg", alt="")
+                        .buttons.file_delete
+                            span Удалить файл?
+                            .buttons
+                                button.white Да
+                                button.white Нет
+                    .buttons
+                        button.white
+                            img(src="./pic/upload.svg", alt="")
+                            span Прикрепить файл
+                        button(type="submit").blue Отправить
+            .overlay
+        script(src="./js/main-dist.js")
+            

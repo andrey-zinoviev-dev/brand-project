@@ -1,0 +1,246 @@
+main
+  .main_wrapper
+    include ./main_dashboard_projects.pug
+    .wrapper.wrapper_projects
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+      h2 Проект № 000001
+      .stages
+        button.stage.clicked Текущий этап
+        button.stage
+          a(href="../../build/brief_tab.html") Бриф
+        button.stage
+          a(href="../../build/project_services_tab.html") Выбранные услуги
+        button.stage Документы
+        button.stage
+          a(href="../../build/results_tab.html") Результат работ
+      .payment
+        .payment_wrapper
+          span Стоимость услуг: 110 000 руб.
+          p Сформирована окончательная стоимость заказа
+          button.blue Оплата
+        .progress_bar
+          span 0% оплачено
+          .progress
+            .filler
+      .block.approved
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 1. Заполнение брифа
+            .status.approved
+              p Текущий статус
+              span Бриф утвержден
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 3 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message 
+            p Пожалуйста, заполните бриф
+        .buttons
+          a(href="../../build/project_unsubmitted_brief.html")
+            button.blue Заполнить бриф
+          button Задать вопрос
+      .block.approved
+        .info
+          .row
+            .stage_toggle 
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 2. Выбор услуг
+            .status.approved
+              p Текущий статус
+              span Услуги на согласовании
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 3 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Бриф был согласован. Предлагаем вам следующий перечень услуг в связи с задачей. Вы можете добавить их к проекту и отправить на согласование.
+          .message.client
+            .message_wrapper
+              p Выбраны следующие услуги:
+              p.service Новый бренд: 100 000 руб
+              p.service Дескриптор: 10 000 руб
+              p.service Слоган: 15 000 руб
+              p.service Итог: 110 000 руб
+          .message
+            p Выбранные услуги на согласовании, ожидайте.
+        .buttons
+          button Задать вопрос
+      .block.approved
+        .info 
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 3. Формирование проектной документации
+            .status
+              p Текущий статус
+              span Документы утверждены
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 4 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Документы на согласовании. Ожидайте около дня.
+          .message
+            p Отправляю вам документы, распишитесь))
+          .message
+            p Добавлены документы на подписание: <br> Договор №0000001, Приложение к договору №0000001
+            a(href="#") Перейти к документам>
+        .buttons
+          button Задать вопрос
+      .block.nested.approved
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 4. Выполнение проекта
+            .status
+              p Текущий статус
+              span В процессе выполнения
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 8 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+      .block.stage_nested.approved
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 4.1 Стратегия бренда
+            .status
+              p Текущий статуc
+              span В процессе выполнения
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 8 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Сформирован счет на оплату, стоимость проекта <b>110 000 руб.</b> Требуется внести предоплату в размере <b> 55 000 руб.</b> или оплатить полностью до <b>7 мая 2020.</b>
+          .message
+            p Мы подготовили презенатцию и часть сопутствующих файлов <br> для вас, данные файлы требуют согласования
+            a(href="#") Перейти к файлам>
+          .message.client
+            p Согласованы документы: Презентация 1, <br> Презентация 3
+            a(href="#") Перейти к файлам>
+        .buttons
+          button Задать вопрос
+      .block.stage_nested.approved
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 4.2 Нейминг
+            .status
+              p Текущий статуc
+              span В процессе выполнения
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 8 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+      .block.stage_nested.approved
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 4.3 Дизайн часть
+            .status
+              p Текущий статуc
+              span В процессе выполнения
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 8 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+      .block.stage_nested.approved
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 4.4 Носители бренда
+            .status
+              p Текущий статуc
+              span В процессе выполнения
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 8 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Сформирован счет на оплату, стоимость проекта <b>110 000 руб.</b> Требуется внести предоплату в размере <b> 55 000 руб.</b> или оплатить полностью до <b>7 мая 2020.</b>
+          .message
+            p Мы подготовили презенатцию и часть сопутствующих файлов <br> для вас, данные файлы требуют согласования
+            a(href="#") Перейти к файлам>
+          .message.client
+            p Согласованы документы: Презентация 1, <br> Презентация 3
+            a(href="#") Перейти к файлам>
+        .buttons
+          button Задать вопрос
+      .block.approved
+        .info
+          .row 
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 5. Результаты работ
+            .status
+              p Текущий статус
+              span Результаты на согласии
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 9 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Вам доступны результаты выполненых работ. Также необходимо подписать акты выполненых работ.
+            a(href="#") Перейти к документам>
+      .block.active
+        .info
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 6. Закрытие проекта
+            .status
+              p Текущий статус
+              span Результаты приняты
+          .refresh_date
+            .column
+              p Последнее обновление
+              span 9 мая 2020
+            .svg_background
+              img(src="./pic/tick.svg", alt="")
+        .chat
+          .message
+            p Направляем вам акты выполненных работ, их необходимо  <br> подписать и отправить нам
+            a(href="#") Перейти к файлам>
+          .message.client
+            p.no_margin Подписал документы вручную
+        .buttons
+          a(href="../../build/close_project.html")
+            button.blue Завершить проект
+          a(href="../../build/review.html")
+            button.blue Оставить отзыв
+          button Задать вопрос

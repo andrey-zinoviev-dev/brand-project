@@ -1,0 +1,10 @@
+.wrapper_projects .wrapper {
+  margin: 0;
+}
+
+.folder {
+  position: relative;
+}
+.folder span {
+  position: absolute;
+}
