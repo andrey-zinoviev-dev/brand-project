@@ -2655,7 +2655,7 @@ footer .wrapper .refs :not(:last-of-type) {
   position: absolute;
   display: flex;
   flex-direction: column;
-  right: 60px;
+  right: 0;
 }
 .links a {
   color: #1859FF;
