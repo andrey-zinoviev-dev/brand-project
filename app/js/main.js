@@ -75,6 +75,7 @@ if(layoutMenuButton) {
     links.classList.toggle('links_shown');
   })
 }
+
 if(localStorage.getItem('link_order')) {
   const link = localStorage.getItem('link_order');
   const foundLink = refs[link];
@@ -84,5 +85,6 @@ if(localStorage.getItem('link_order')) {
 refs.forEach((ref, i) => {
   ref.addEventListener('click', () => {
     localStorage.setItem('link_order', i);
+    firstPageLoad = false;
   })
 })
