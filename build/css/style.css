@@ -80,22 +80,19 @@ ul li {
   align-items: center;
   margin-bottom: 48px;
 }
-ul li.active .chat path {
-  fill: white;
-  stroke: #1859FF;
-}
 ul li.active svg path {
   fill: #1859FF;
-  stroke: #1859FF;
-}
-ul li.active svg rect {
-  stroke: #1859FF;
-}
-ul li.active :last-of-type {
-  stroke: white;
 }
 ul li.active a {
   color: #1859FF;
+}
+ul li.active .main_page path {
+  fill: none;
+  stroke: #1859FF;
+}
+ul li.active .projects path {
+  stroke: none;
+  fill: #1859FF;
 }
 ul li a {
   font-size: 18px;
@@ -674,6 +671,9 @@ main .wrapper_projects .block .info .row {
 main .wrapper_projects .block .info .stage_toggle {
   display: flex;
 }
+main .wrapper_projects .block .info .stage_toggle img {
+  content: url("../pic/arrow.svg");
+}
 main .wrapper_projects .block .info .stage_toggle span {
   width: 268px;
   color: #959595;
@@ -769,6 +769,9 @@ main .wrapper_projects .active .info span {
 main .wrapper_projects .active .info p {
   font-size: 12px;
   line-height: 140%;
+}
+main .wrapper_projects .active .info .stage_toggle img {
+  content: url("../pic/arrow_up.svg");
 }
 main .wrapper_projects .active .info .stage_toggle span {
   color: #3C3C3B;

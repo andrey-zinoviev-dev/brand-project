@@ -85,6 +85,5 @@ if(localStorage.getItem('link_order')) {
 refs.forEach((ref, i) => {
   ref.addEventListener('click', () => {
     localStorage.setItem('link_order', i);
-    firstPageLoad = false;
   })
 })

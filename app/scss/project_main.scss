@@ -88,6 +88,9 @@ main {
         }
         .stage_toggle {
           display: flex;
+          img {
+            content: url("../pic/arrow.svg")
+          }
           span {
             // min-width: 200px;
             // max-width: 270px;
@@ -197,6 +200,9 @@ main {
           line-height: 140%;
         }
         .stage_toggle {
+          img {
+            content: url("../pic/arrow_up.svg");
+          }
           span {
             color: #3C3C3B;
           }

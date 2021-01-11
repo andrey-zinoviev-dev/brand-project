@@ -25,13 +25,13 @@
         <div class="main_wrapper">
           <nav>   
             <ul>
-              <li class="active"><a href="#">
+              <li><a href="#">
                   <svg class="main_page" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.525 8.48125L10.7125 1.59062C11.1792 1.24062 11.8208 1.24062 12.2875 1.59062L21.475 8.48125C21.8055 8.72912 22 9.11813 22 9.53125V21.3438C22 22.0686 21.4124 22.6562 20.6875 22.6562H2.3125C1.58763 22.6562 1 22.0686 1 21.3438V9.53125C1 9.11813 1.19451 8.72912 1.525 8.48125Z" stroke="#3C3C3B" stroke-width="1.7"></path>
                     <path d="M1 10H22" stroke="#3C3C3B" stroke-width="1.7"></path>
                     <path d="M8 23V18C8 17.4477 8.44772 17 9 17H14C14.5523 17 15 17.4477 15 18V23" stroke="#3C3C3B" stroke-width="1.7"></path>
                   </svg><span>Главная страница</span></a></li>
-              <li><a href="../../build/projects.html">
+              <li class="active"><a href="../../build/projects.html">
                   <svg class="projects" width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.35045 19.4844H23.6585C26.0022 19.4844 27.1629 18.3237 27.1629 16.0246V9.41741C27.1629 8.41295 27.029 7.91071 26.5268 7.29687L22.6763 2.53125C21.3705 0.924107 20.7902 0.433035 18.8036 0.433035H9.20536C7.21875 0.433035 6.64955 0.924107 5.34375 2.53125L1.48214 7.29687C0.991071 7.91071 0.845982 8.41295 0.845982 9.41741V16.0246C0.845982 18.3348 2.01786 19.4844 4.35045 19.4844ZM14.0045 12.3527C12.4308 12.3527 11.4152 10.9799 11.4152 9.68527V9.65179C11.4152 9.18304 11.1362 8.74777 10.5558 8.74777H3.20089C2.83259 8.74777 2.75446 8.42411 2.9442 8.18973L7.08482 2.96652C7.6317 2.27455 8.2567 1.99554 9.07143 1.99554H18.9375C19.7522 1.99554 20.3772 2.27455 20.9241 2.96652L25.0759 8.18973C25.2545 8.42411 25.1875 8.74777 24.8192 8.74777H17.4531C16.8728 8.74777 16.6049 9.18304 16.6049 9.65179V9.68527C16.6049 10.9799 15.5893 12.3527 14.0045 12.3527ZM18.7031 3.63616H9.31696C9.01563 3.63616 8.78125 3.87054 8.78125 4.17187C8.78125 4.47321 9.01563 4.70759 9.31696 4.70759H18.7031C19.0045 4.70759 19.2277 4.47321 19.2277 4.17187C19.2277 3.87054 19.0045 3.63616 18.7031 3.63616ZM20.1763 6.15848H7.83259C7.52009 6.15848 7.28571 6.4375 7.28571 6.73884C7.28571 7.04018 7.52009 7.29687 7.83259 7.29687H20.1763C20.4888 7.29687 20.7344 7.04018 20.7344 6.73884C20.7344 6.4375 20.4888 6.15848 20.1763 6.15848ZM4.37277 17.6875C3.2567 17.6875 2.64286 17.096 2.64286 15.9353V10.3772H9.71875C9.98661 12.4643 11.7388 14.0045 14.0045 14.0045C16.2701 14.0045 18.0223 12.4531 18.2902 10.3772H25.3661V15.9353C25.3661 17.096 24.7411 17.6875 23.6362 17.6875H4.37277Z" fill="#3C3C3B"></path>
                   </svg><span>Проекты</span></a></li>
@@ -53,63 +53,20 @@
                   </svg><span>Профиль</span></a></li>
             </ul>
           </nav>
-          <div class="wrapper">
-            <div class="submitted_cards brief_and_docs"> 
-              <div class="card new_padding high">
-                <div class="text_wrapper">
-                  <h3>Текущий проект</h3>
-                  <div class="info">
-                    <p>i
-                      <div class="shape show_hint"></div>
-                    </p>
-                  </div>
-                </div>
-                <div class="hovered_block show_hint">
-                  <p>тут будут отражены все обновления по текущему проекту: Заказ № {{Номер}}</p>
-                </div>
-                <div class="element submitted"> 
-                  <h4>Бриф заполнен <br> и отправлен</h4><span>1 мая, 12:08</span>
-                  <p>Спасибо, что отправили бриф, он направлен на проверку, после того..<a href="#">Читать полностью></a></p>
-                </div>
-                <div class="element submitted">
-                  <h4>Составлен перечень <br> документов на подписание</h4><span>2 мая, 12:08</span>
-                  <p>Составлен перечень документов на подписание {{Наименование доку...}}<a href="#">Читать полностью</a></p>
-                </div>
-                <div class="element submitted no_underscore">
-                  <h4>Документы в процессе <br> утверждения</h4><span>3 мая, 12:08</span>
-                  <p>Документы в процессе утверждения. <br> Ожидайте около дня</p>
-                </div>
-                <button>К проекту</button>
-              </div>
-              <div class="card new_padding docs">
-                <div class="text_wrapper">
-                  <h3>Документы</h3>
-                  <div class="info">
-                    <p>i
-                      <div class="shape show_hint"></div>
-                    </p>
-                  </div>
-                </div>
-                <div class="hovered_block show_hint">
-                  <p>тут будут отражены все обновления <br> по текущему проекту: Заказ № {{Номер}}</p>
-                </div>
-                <div class="element document first">
-                  <div class="wrapper"><img src="./pic/Icon.png" alt=""/>
-                    <p>Наименование <br> документа длинное</p>
-                  </div><span>2 мая, 12:08</span>
-                </div>
-                <div class="element document">
-                  <div class="wrapper"><img src="./pic/Icon.png" alt=""/>
-                    <p>Наименование <br> документа длинное</p>
-                  </div><span>2 мая, 12:08</span>
-                </div>
-                <button>Все документы</button>
-              </div>
-              <div class="card new_padding last"><img src="./pic/docs_logo.png" alt=""/>
-                <h3>Дополнительные <br> услуги</h3>
-                <p class="last">Возможно они вас заинтересуют</p>
-                <button>Посмотреть</button>
-              </div>
+          <div class="wrapper wrapper_projects">
+            <div class="route"><span>Проекты</span><img src="./pic/arrow_right.svg" alt=""/><span>Проект # 000001</span><img src="./pic/arrow_right.svg" alt=""/><span>Документы</span></div>
+            <h2 class="docs_project">Проект № 000001</h2>
+            <div class="stages">
+              <button class="stage">Текущий этап</button><a href="../../build/brief_tag.html"> 
+                <button class="stage">Бриф</button></a><a href="../../build/project_services.html">
+                <button class="stage">Выбранные услуги</button></a>
+              <button class="stage clicked">Документы</button><a href="../../build/results_tab.html"> 
+                <button class="stage">Результат работ</button></a>
+            </div>
+            <div class="wrapper">
+              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Бриф</span></div>
+              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Проектная документация</span></div>
+              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Результаты работ</span></div>
             </div>
           </div>
         </div>
