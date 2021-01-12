@@ -121,27 +121,48 @@ p {
       align-items: center;
       text-align: left;
       .custom_radio {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // width: 29px;
+        // height: 29px;
+        // background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+        // box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 10px rgba(166, 180, 200, 0.75);
+        // border-radius: 10px;
+        display: none;
+        &:checked + .fill {
+          .selected {
+            background: linear-gradient(134.17deg, #1859FF 4.98%, #A3BDFF 94.88%);
+            box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75);
+          }
+        }
+      }
+
+      .fill {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 29px;
-        height: 29px;
+        min-width: 29px;
+        min-height: 29px;
         background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
         box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 10px rgba(166, 180, 200, 0.75);
         border-radius: 10px;
         cursor: pointer;
-        .fill {
-          min-width: 19px;
-          min-height: 19px;
-        }
       }
-      span {
+      .selected {
+        min-width: 19px;
+        min-height: 19px;
+        max-width: 19px;
+        border-radius: 7px;
+      }
+      .anchor {
         margin-left: 25px;
         color: #1859FF;
         max-width: 223px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        cursor: pointer;
       }
     }
     &:last-of-type {
@@ -155,11 +176,11 @@ p {
     }
     &.selected {
       background: linear-gradient(134.17deg, rgba(218, 228, 255, 0.3) 4.98%, rgb(151, 180, 255, 0.3) 94.88%);
-      .fill {
-        background: linear-gradient(134.17deg, #1859FF 4.98%, #A3BDFF 94.88%);
-        box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75);
-        border-radius: 7px;
-      }
+      // .fill {
+      //   background: linear-gradient(134.17deg, #1859FF 4.98%, #A3BDFF 94.88%);
+      //   box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75);
+      //   border-radius: 7px;
+      // }
       button {
         box-shadow: none;
       }

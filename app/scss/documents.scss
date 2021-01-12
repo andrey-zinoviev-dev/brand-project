@@ -23,6 +23,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      img {
+        max-width: 307px;
+      }
       h2 {
         margin-bottom: 20px;
       }

@@ -4,6 +4,7 @@ const sendMessagePopup = document.querySelector('.popup_send_message');
 const uploadImagePage = document.querySelector('.upload_image');
 const closeUploadPopup = document.querySelector('.close_popup');
 let closeDocPopup;
+
 if(attachDocumentPopup) {
   closeDocPopup = attachDocumentPopup.querySelector('.close_popup');
 }
@@ -21,6 +22,8 @@ const sendMessage = document.querySelector('.send_message');
 const layoutMenuButton = document.querySelector('.menu_dropdown');
 const links = document.querySelector('.links');
 const refs = Array.from(links.querySelectorAll('.link'));
+const hintCardButtons = Array.from(document.querySelectorAll('.info'));
+// const docs = Array.from(document.querySelectorAll('.doc'));
 
 if(uploadImagePage) {
   uploadImagePage.addEventListener('click', (evt) => {
@@ -87,3 +90,22 @@ refs.forEach((ref, i) => {
     localStorage.setItem('link_order', i);
   })
 })
+
+if(hintCardButtons) {
+  hintCardButtons.forEach((hintCardButton) => {
+    hintCardButton.addEventListener('click', (evt) => {
+      evt.target.parentElement.querySelector('.hovered_block').classList.toggle('show_hint');
+    })
+  })
+}
+
+// if(docs) {
+//   docs.forEach((doc) => {
+//     const labels = Array.from(doc.querySelectorAll('label'));
+//     labels.forEach((label) => {
+//       label.addEventListener('click', () => {
+//         doc.classList.toggle('selected');
+//       })
+//     })
+//   })
+// }

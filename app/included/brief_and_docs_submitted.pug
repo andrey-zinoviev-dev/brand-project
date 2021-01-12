@@ -39,11 +39,10 @@ main
         .card.new_padding.high
           .text_wrapper
             h3 Текущий проект
-            .info
-              p i
-                .shape.show_hint
-          .hovered_block.show_hint
-            p тут будут отражены все обновления по текущему проекту: Заказ № {{Номер}}
+            button.info i
+              .shape.show_hint
+            .hovered_block.show_hint
+              p тут будут отражены все обновления по текущему проекту: Заказ № {{Номер}}
           .element.submitted  
             h4 Бриф заполнен <br> и отправлен
             span 1 мая, 12:08
@@ -58,15 +57,14 @@ main
             h4 Документы в процессе <br> утверждения
             span 3 мая, 12:08
             p Документы в процессе утверждения. <br> Ожидайте около дня
-          button К проекту
+          button.link К проекту
         .card.new_padding.docs
           .text_wrapper
             h3 Документы
-            .info
-              p i
-                .shape.show_hint
-          .hovered_block.show_hint
-            p тут будут отражены все обновления <br> по текущему проекту: Заказ № {{Номер}}
+            button.info i
+              .shape.show_hint
+            .hovered_block.show_hint
+              p тут будут отражены все обновления <br> по текущему проекту: Заказ № {{Номер}}
           .element.document.first
             .wrapper
               img(src="./pic/Icon.png", alt="")

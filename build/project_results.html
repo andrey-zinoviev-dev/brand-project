@@ -23,7 +23,7 @@
         <div class="main_wrapper">
           <nav>   
             <ul>
-              <li><a href="#">
+              <li><a href="../../build/Menu-page.html">
                   <svg class="main_page" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.525 8.48125L10.7125 1.59062C11.1792 1.24062 11.8208 1.24062 12.2875 1.59062L21.475 8.48125C21.8055 8.72912 22 9.11813 22 9.53125V21.3438C22 22.0686 21.4124 22.6562 20.6875 22.6562H2.3125C1.58763 22.6562 1 22.0686 1 21.3438V9.53125C1 9.11813 1.19451 8.72912 1.525 8.48125Z" stroke="#3C3C3B" stroke-width="1.7"></path>
                     <path d="M1 10H22" stroke="#3C3C3B" stroke-width="1.7"></path>
@@ -69,12 +69,14 @@
             <h4>Документы по проекту</h4>
             <div class="docs result">
               <div class="text"><span>Наименование</span><span>Получен</span><span class="margin_left">Статус</span><span>Скачать</span></div>
-              <div class="doc selected first_curved">
+              <div class="doc first_curved">
                 <div class="wrapper">
                   <div class="radio">
-                    <div class="custom_radio">
-                      <div class="fill"></div>
-                    </div><span class="anchor">Акт 1</span>
+                    <input class="custom_radio" type="checkbox" name="doc" id="doc-1"/>
+                    <label class="fill" for="doc-1">
+                      <div class="selected"></div>
+                    </label>
+                    <label class="anchor" for="doc-1">Акт 1</label>
                   </div><span>05.05.2020 12:08</span>
                 </div><span class="grey">Не подписан</span>
                 <button><img src="./pic/download.svg" alt=""/></button>
@@ -82,9 +84,11 @@
               <div class="doc">
                 <div class="wrapper">
                   <div class="radio">
-                    <div class="custom_radio">
-                      <div class="fill"></div>
-                    </div><span class="anchor">Акт 2</span>
+                    <input class="custom_radio" type="checkbox" name="doc" id="doc-2"/>
+                    <label class="fill" for="doc-2">
+                      <div class="selected"></div>
+                    </label>
+                    <label class="anchor" for="doc-2">Акт 2</label>
                   </div><span>05.05.2020 12:08</span>
                 </div><span class="confirmed">Подписан</span>
                 <button><img src="./pic/download.svg" alt=""/></button>

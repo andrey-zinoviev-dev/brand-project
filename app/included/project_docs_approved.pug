@@ -3,7 +3,7 @@ main
     nav    
       ul
         li
-          a(href="#")
+          a(href="../../build/Menu-page.html")
             svg.main_page(width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg")
               path(d="M1.525 8.48125L10.7125 1.59062C11.1792 1.24062 11.8208 1.24062 12.2875 1.59062L21.475 8.48125C21.8055 8.72912 22 9.11813 22 9.53125V21.3438C22 22.0686 21.4124 22.6562 20.6875 22.6562H2.3125C1.58763 22.6562 1 22.0686 1 21.3438V9.53125C1 9.11813 1.19451 8.72912 1.525 8.48125Z" stroke="#3C3C3B" stroke-width="1.7")
               path(d="M1 10H22" stroke="#3C3C3B" stroke-width="1.7")
@@ -41,12 +41,14 @@ main
         span Проект # 000001
       h2 Проект № 000001
       .stages
-        button.stage.clicked Текущий этап
+        button.stage.clicked
+          a(href="../../build/project_docs_approved.html") Текущий этап
         button.stage
           a(href="../../build/brief_tab.html") Бриф
         button.stage
           a(href="../../build/project_services_tab.html") Выбранные услуги
-        button.stage Документы
+        button.stage
+          a(href="../../build/documents_tab.html") Документы
         button.stage
           a(href="../../build/results_tab.html") Результат работ
       .payment
@@ -131,7 +133,7 @@ main
             p Отправляю вам документы, распишитесь))
           .message
             p Добавлены документы на подписание: <br> Договор №0000001, Приложение к договору №0000001
-            a(href="#") Перейти к документам>
+            a(href="../../build/docs_of_project.html") Перейти к документам>
         .buttons
           button Задать вопрос
       .block.nested.approved
@@ -225,10 +227,10 @@ main
             p Сформирован счет на оплату, стоимость проекта <b>110 000 руб.</b> Требуется внести предоплату в размере <b> 55 000 руб.</b> или оплатить полностью до <b>7 мая 2020.</b>
           .message
             p Мы подготовили презенатцию и часть сопутствующих файлов <br> для вас, данные файлы требуют согласования
-            a(href="#") Перейти к файлам>
+            a(href="../../build/docs_of_project.html") Перейти к файлам>
           .message.client
             p Согласованы документы: Презентация 1, <br> Презентация 3
-            a(href="#") Перейти к файлам>
+            a(href="../../build/docs_of_project.html") Перейти к файлам>
         .buttons
           button Задать вопрос
       .block.approved
@@ -249,7 +251,7 @@ main
         .chat
           .message
             p Вам доступны результаты выполненых работ. Также необходимо подписать акты выполненых работ.
-            a(href="#") Перейти к документам>
+            a(href="../../build/project_results.html") Перейти к документам>
       .block.active
         .info
           .row
@@ -268,7 +270,7 @@ main
         .chat
           .message
             p Направляем вам акты выполненных работ, их необходимо  <br> подписать и отправить нам
-            a(href="#") Перейти к файлам>
+            a(href="../../build/project_results.html") Перейти к файлам>
           .message.client
             p.no_margin Подписал документы вручную
         .buttons

@@ -41,12 +41,14 @@ main
         span Проект # 000001
       h2 Проект № 000001
       .stages
-        button.stage.clicked Текущий этап
+        button.stage.clicked
+          a(href="../../build/project_unsubmitted_brief.html") Текущий этап
         button.stage
           a(href="../../build/brief_tab.html") Бриф
         button.stage
           a(href="../../build/project_services_tab.html") Выбранные услуги
-        button.stage Документы
+        button.stage
+          a(href="../../build/documents_tab.html") Документы
         button.stage
           a(href="../../build/results_tab.html") Результат работ
       .block.active

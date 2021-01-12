@@ -67,9 +67,10 @@ main
         .doc.selected.first_curved
           .wrapper
             .radio
-              .custom_radio
-                .fill
-              span.anchor Договор № 000001
+              input(type="checkbox", name="doc", id="doc-1").custom_radio
+              label(for="doc-1").fill
+                .selected
+              label(for="doc-1").anchor Договор № 000001
             span 05.05.2020 12:08
           span.grey Не подписан
           button
@@ -77,9 +78,10 @@ main
         .doc
           .wrapper
             .radio
-              .custom_radio
-                .fill
-              span.anchor Приложение к договору № ...
+              input(type="checkbox", name="doc", id="doc-2").custom_radio
+              label(for="doc-2").fill
+                .selected
+              label(for="doc-2").anchor Приложение к договору № ...
             span 05.05.2020 12:08
           span.grey Не подписан
           button

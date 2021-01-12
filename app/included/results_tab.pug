@@ -43,12 +43,17 @@ main
         span Результаты работ
       h2 Проект № 000001
       .stages
-        button.stage Текущий этап
-        button.stage Бриф
-        a(href="../../build/project_services_tab.html") 
-          button.stage Выбранные услуги
-        button.stage Документы
-        button.stage.clicked Результат работ
+        button.stage
+          a(href="../../build/project_docs_approved.html") Текущий этап
+        button.stage
+          a(href="../../build/brief_tab.html") Бриф
+          a(href="../../build/project_services_tab.html") 
+        button.stage
+          a(href="../../build/project_services_tab.html") Выбранные услуги
+        button.stage
+          a(href="../../build/documents_tab.html") Документы
+        button.stage.clicked
+          a(href="../../build/results_tab.html") Результат работ
       .wrapper.no_results.hidden
         h3 Результатов пока-что нет
         span Не волнуйтесь, они скоро появятся

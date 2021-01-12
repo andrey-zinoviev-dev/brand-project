@@ -23,8 +23,8 @@
             position: absolute;
             box-sizing: border-box;
             max-width: 301px;
-            top: 70px;
-            right: -120px;
+            top: 38px;
+            right: -142px;
             z-index: 2;
             background-color: #FEFEFF;
             padding: 19px 25px 12px 13px;
@@ -170,10 +170,8 @@
     // }
     .new_padding {
         padding: 22px 0 35px 0;
-        &:first-of-type {
-            button {
-                margin-top: 24px;
-            }
+        .link {
+            margin-top: 24px;
         }
     }
     .text_wrapper {
@@ -193,6 +191,13 @@
             border-radius: 10px;
             background: linear-gradient(250.17deg, #BBCEFF 4.98%, #1859FF 94.88%);
             box-shadow: -5px -5px 20px rgba(230, 230, 230, 0.8), 2px 2px 3px rgba(144, 165, 194, 0.35);
+            padding: 0;
+            margin: 0;
+            margin-top: 0;
+            color: #EBEFF7;
+            font-size: 12px;
+            line-height: 17px;
+            font-weight: 500;
             p {
                 margin: 0;
                 color: #EBEFF7;
@@ -225,41 +230,41 @@
         .high {
             min-height: 677px;
         }
-        .docs {
-            .text_wrapper {
-                margin-bottom: 76px;
-            }
-            .document {
-                margin: 0 38px 0 15px;
-                border: none;
-                display: block;
-                border-bottom: 1px solid rgba(149, 149, 149, 0.5);
-                .wrapper {
-                    display: flex;
-                    justify-content: flex-start;
-                    margin: 0 0 8px 0;
-                    img {
-                        max-width: 14px;
-                        min-height: 0;
-                        margin: 0 10px 0 0;
-                    }
-                    p {
-                        margin: 0;
-                        font-size: 14px;
-                        line-height: 110%;
-                        color: #3B3B3B;
-                    }
+        .hovered_block {
+            top: 38px;
+        }
+    }
+    .docs {
+        .text_wrapper {
+            margin-bottom: 76px;
+        }
+        .document {
+            margin: 0 38px 0 15px;
+            border: none;
+            display: block;
+            border-bottom: 1px solid rgba(149, 149, 149, 0.5);
+            .wrapper {
+                display: flex;
+                justify-content: flex-start;
+                margin: 0 0 8px 0;
+                img {
+                    max-width: 14px;
+                    min-height: 0;
+                    margin: 0 10px 0 0;
                 }
-                &.first {
-                    margin-bottom: 25px;
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 110%;
+                    color: #3B3B3B;
                 }
             }
-            button {
-                margin: 40px 0 0 0;
+            &.first {
+                margin-bottom: 25px;
             }
         }
-        .hovered_block {
-            top: 62px;
+        button {
+            margin: 40px 0 0 0;
         }
     }
 }

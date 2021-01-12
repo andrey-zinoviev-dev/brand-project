@@ -301,8 +301,8 @@ button.close img {
   position: absolute;
   box-sizing: border-box;
   max-width: 301px;
-  top: 70px;
-  right: -120px;
+  top: 38px;
+  right: -142px;
   z-index: 2;
   background-color: #FEFEFF;
   padding: 19px 25px 12px 13px;
@@ -416,7 +416,7 @@ button.close img {
 .submitted_cards .new_padding {
   padding: 22px 0 35px 0;
 }
-.submitted_cards .new_padding:first-of-type button {
+.submitted_cards .new_padding .link {
   margin-top: 24px;
 }
 .submitted_cards .text_wrapper {
@@ -437,6 +437,13 @@ button.close img {
   border-radius: 10px;
   background: linear-gradient(250.17deg, #BBCEFF 4.98%, #1859FF 94.88%);
   box-shadow: -5px -5px 20px rgba(230, 230, 230, 0.8), 2px 2px 3px rgba(144, 165, 194, 0.35);
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  color: #EBEFF7;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
 }
 .submitted_cards .text_wrapper .info p {
   margin: 0;
@@ -464,39 +471,39 @@ button.close img {
 .submitted_cards.brief_and_docs .high {
   min-height: 677px;
 }
-.submitted_cards.brief_and_docs .docs .text_wrapper {
+.submitted_cards.brief_and_docs .hovered_block {
+  top: 38px;
+}
+.submitted_cards .docs .text_wrapper {
   margin-bottom: 76px;
 }
-.submitted_cards.brief_and_docs .docs .document {
+.submitted_cards .docs .document {
   margin: 0 38px 0 15px;
   border: none;
   display: block;
   border-bottom: 1px solid rgba(149, 149, 149, 0.5);
 }
-.submitted_cards.brief_and_docs .docs .document .wrapper {
+.submitted_cards .docs .document .wrapper {
   display: flex;
   justify-content: flex-start;
   margin: 0 0 8px 0;
 }
-.submitted_cards.brief_and_docs .docs .document .wrapper img {
+.submitted_cards .docs .document .wrapper img {
   max-width: 14px;
   min-height: 0;
   margin: 0 10px 0 0;
 }
-.submitted_cards.brief_and_docs .docs .document .wrapper p {
+.submitted_cards .docs .document .wrapper p {
   margin: 0;
   font-size: 14px;
   line-height: 110%;
   color: #3B3B3B;
 }
-.submitted_cards.brief_and_docs .docs .document.first {
+.submitted_cards .docs .document.first {
   margin-bottom: 25px;
 }
-.submitted_cards.brief_and_docs .docs button {
+.submitted_cards .docs button {
   margin: 40px 0 0 0;
-}
-.submitted_cards.brief_and_docs .hovered_block {
-  top: 62px;
 }
 
 button {
@@ -1300,6 +1307,7 @@ main .payment .progress_bar .progress .filler {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+  position: relative;
 }
 .heading_wrapper h3 {
   margin: 0 20px 0 0;
@@ -1320,6 +1328,39 @@ main .payment .progress_bar .progress .filler {
   max-height: 18px;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.heading_wrapper .shape {
+  display: none;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  top: 30px;
+  background: white;
+  position: absolute;
+  left: 297px;
+}
+.heading_wrapper .shape.show_hint {
+  display: flex;
+}
+.heading_wrapper .hovered_block {
+  display: none;
+  background-color: #FEFEFF;
+  position: absolute;
+  padding: 19px 25px 12px 13px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 24.9624px rgba(255, 255, 255, 0.8), 12.4812px 12.4812px 24.9624px rgba(166, 180, 200, 0.7);
+  top: 35px;
+  left: 170px;
+}
+.heading_wrapper .hovered_block p {
+  font-size: 12px;
+  line-height: 17px;
+  color: #3C3C3B;
+}
+.heading_wrapper .hovered_block.show_hint {
+  display: flex;
 }
 
 p {
@@ -1445,27 +1486,37 @@ p {
   text-align: left;
 }
 .docs .doc .radio .custom_radio {
+  display: none;
+}
+.docs .doc .radio .custom_radio:checked + .fill .selected {
+  background: linear-gradient(134.17deg, #1859FF 4.98%, #A3BDFF 94.88%);
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75);
+}
+.docs .doc .radio .fill {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 29px;
-  height: 29px;
+  min-width: 29px;
+  min-height: 29px;
   background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 10px rgba(166, 180, 200, 0.75);
   border-radius: 10px;
   cursor: pointer;
 }
-.docs .doc .radio .custom_radio .fill {
+.docs .doc .radio .selected {
   min-width: 19px;
   min-height: 19px;
+  max-width: 19px;
+  border-radius: 7px;
 }
-.docs .doc .radio span {
+.docs .doc .radio .anchor {
   margin-left: 25px;
   color: #1859FF;
   max-width: 223px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 .docs .doc:last-of-type {
   border-radius: 0px 0px 10px 10px;
@@ -1478,11 +1529,6 @@ p {
 }
 .docs .doc.selected {
   background: linear-gradient(134.17deg, rgba(218, 228, 255, 0.3) 4.98%, rgba(151, 180, 255, 0.3) 94.88%);
-}
-.docs .doc.selected .fill {
-  background: linear-gradient(134.17deg, #1859FF 4.98%, #A3BDFF 94.88%);
-  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75);
-  border-radius: 7px;
 }
 .docs .doc.selected button {
   box-shadow: none;
@@ -1816,6 +1862,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.wrapper_projects .wrapper.finalize img {
+  max-width: 307px;
 }
 .wrapper_projects .wrapper.finalize h2 {
   margin-bottom: 20px;
